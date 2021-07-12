@@ -1,0 +1,23 @@
+* {
+    margin: 0%;
+    padding: 0.3%;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.main {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    text-align: center;
+    border-radius: 25px;
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+}
+
+.btn {
+    height: auto;
+    width: 40px;
+}

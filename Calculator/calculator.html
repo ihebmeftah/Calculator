@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container circle">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="form" class="main">
+                        <input type="text" class="display form-control" name="textview" id="textview "><br>
+                        <input type="button" class="btn-lg btn-secondary" value="C" id="clear" onclick="clean();">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="Del" onclick="back();">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="%" onclick="insert('%')">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="/" onclick="insert('/')"><br><br>
+                        <input type="button" class="btn-lg btn-outline-primary" value="7" onclick="insert(7);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="8" onclick="insert(8);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="9" onclick="insert(9);">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="*" onclick="insert('*')"><br><br>
+                        <input type="button" class="btn-lg btn-outline-primary" value="4" onclick="insert(4);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="5" onclick="insert(5);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="6" onclick="insert(6);">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="-" onclick="insert('-')"><br><br>
+                        <input type="button" class="btn-lg btn-outline-primary" value="1" onclick="insert(1);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="2" onclick="insert(2);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="3" onclick="insert(3);">
+                        <input type="button" class="btn-lg btn-secondary ml-3" value="+" onclick="insert('+')"><br><br>
+                        <input type="button" class="btn-lg btn-outline-primary" value="0" onclick="insert(0);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="00" onclick="insert(00);">
+                        <input type="button" class="btn-lg btn-outline-primary ml-3" value="." onclick="insert('.')">
+                        <input type="button" class="btn-lg btn-outline-success ml-3" value="=" onclick="equal();">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./calculator.js">
+    </script>
+
+</body>
+
+</html>
